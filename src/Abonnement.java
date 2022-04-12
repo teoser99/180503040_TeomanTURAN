@@ -5,6 +5,14 @@ public class Abonnement {
     private boolean Zahlungsstatus;
     private Bestellung Bestellung;
 
+    public Abonnement(Menü menü, String startdatum, String enddatum, boolean zahlungsstatus, Bestellung bestellung) {
+        this.Menü = menü;
+        this.Startdatum = startdatum;
+        this.Enddatum = enddatum;
+        this.Zahlungsstatus = zahlungsstatus;
+        this.Bestellung = bestellung;
+    }
+
     public Menü getMenü() {
         return Menü;
     }

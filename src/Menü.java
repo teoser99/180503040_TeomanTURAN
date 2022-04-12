@@ -2,6 +2,11 @@ public class Menü {
     private int Preis;
     private String Inhalt;
 
+    public Menü(int preis, String inhalt) {
+        this.Preis = preis;
+        this.Inhalt = inhalt;
+    }
+
     public int getPreis() {
         return Preis;
     }

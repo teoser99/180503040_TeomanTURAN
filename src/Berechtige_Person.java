@@ -9,6 +9,19 @@ public class Berechtige_Person {
     private Abonnement Abonnement ;
     private Bestellung Bestellung;
 
+    public Berechtige_Person(String ID_Nummer, String vorname, String nachname, String benutzername, String passwort,
+                             String filiale_ID, Kunde kunde, Abonnement abonnement, Bestellung bestellung) {
+        this.ID_Nummer = ID_Nummer;
+        this.Vorname = vorname;
+        this.Nachname = nachname;
+        this.Benutzername = benutzername;
+        this.Passwort = passwort;
+        this.Filiale_ID = filiale_ID;
+        this.Kunde = kunde;
+        this.Abonnement = abonnement;
+        this.Bestellung = bestellung;
+    }
+
     public String getID_Nummer() {
         return ID_Nummer;
     }

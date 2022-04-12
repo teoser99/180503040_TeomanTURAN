@@ -1,9 +1,21 @@
+import java.util.Scanner;
+
 public class Verwaltungspersonal {
     private String ID_Nummer;
     private String Vorname;
     private String Nachname;
     private String Passwort;
     private Berechtige_Person Berechtige_Person;
+    Scanner scanner = new Scanner(System.in);
+
+    public Verwaltungspersonal(String ID_Nummer, String vorname, String nachname, String passwort,
+                               Berechtige_Person berechtige_Person) {
+        this.ID_Nummer = ID_Nummer;
+        this.Vorname = vorname;
+        this.Nachname = nachname;
+        this.Passwort = passwort;
+        this.Berechtige_Person = berechtige_Person;
+    }
 
     public String getID_Nummer() {
         return ID_Nummer;

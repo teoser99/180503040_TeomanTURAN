@@ -4,6 +4,13 @@ public class Bestellung {
     private int Gesamtpreis;
     private String Filiale_ID;
 
+    public Bestellung(Menü menü, int menü_Anzahl, int gesamtpreis, String filiale_ID) {
+        this.Menü = menü;
+        this.Menü_Anzahl = menü_Anzahl;
+        this.Gesamtpreis = gesamtpreis;
+        this.Filiale_ID = filiale_ID;
+    }
+
     public Menü getMenü() {
         return Menü;
     }

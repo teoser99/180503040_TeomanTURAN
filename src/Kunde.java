@@ -6,6 +6,16 @@ public class Kunde {
     private String Passwort;
     private Abonnement Abonnement;
 
+    public Kunde(String EMail_Adresse, String kundenname, String nachname, String adressinfo, String passwort,
+                 Abonnement abonnement) {
+        this.EMail_Adresse = EMail_Adresse;
+        this.Kundenname = kundenname;
+        this.Nachname = nachname;
+        this.Adressinfo = adressinfo;
+        this.Passwort = passwort;
+        this.Abonnement = abonnement;
+    }
+
     public String getEMail_Adresse() {
         return EMail_Adresse;
     }
